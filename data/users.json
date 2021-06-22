@@ -2,11 +2,13 @@
     {
         "id": "abc-def",
         "name": "jay hank",
-        "email": "jay@email.com"
+        "email": "jay@email.com",
+        "tone": "cynical"
     },
     {
         "id": "tuw-xyz",
         "name": "hannah jobs",
-        "email": "hannah@email.com"
+        "email": "hannah@email.com",
+        "tone": "humorous"
     }
 ]
