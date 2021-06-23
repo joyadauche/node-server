@@ -7,7 +7,6 @@ const auth = require('../middleware/auth');
 
 const router = express.Router();
 
-
 router.get('/', (req, res) => {
     res.send(data);
 });
@@ -28,7 +27,6 @@ router.get('/:id', (req, res) => {
 router.post('/', body('name').isLength({ min: 3 }).escape(), body('email').isEmail().escape(), (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
-
 
     const { error } = validate(req.body); 
     if (error) return res.status(400).send(error.details[0].message);
