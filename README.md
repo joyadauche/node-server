@@ -10,7 +10,7 @@ An API that exposes a user resource to return all users, return a specific user,
 #### GET /api/users - returns all users details
 #### GET /api/users/:id - return a specific user detail
 #### POST /api/users - create a user
-#### GET /api/me - gets a logged in user (Kindly note that this commented out - Needs to be uncommented if you want to send a request to this endpoint)
+#### GET /api/id - gets a logged in user (Kindly note that this commented out in 14 to 21 in user.js - Needs to be uncommented if you want to send a request to this endpoint)
 ##### Description
 By passing an `x-auth-token` in the headers, this endpoint simulates an authenticated user trying to get details on a logged in user.
 The `x-auth-token` value used for the simulation is a valid email address. In this case, a valid email address is one that has been successfully created by this API Service as part of a user detail.
