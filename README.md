@@ -12,7 +12,7 @@
 
 ## Run Server:
 - `docker build -t user--express-node-server  .`     
-- `docker run -it -p 3000:000 user--express-node-server `
+- `docker run -it -p 3000:3000 user--express-node-server `
 
 ## Run Tests
 `npm test`
