@@ -1,4 +1,5 @@
 const express = require('express');
+const { body, validationResult } = require('express-validator');
 const randomstring = require("randomstring");
 const data = require('../data/users.json');
 const { validate, toJSON } = require('../models/user');
@@ -24,7 +25,11 @@ router.get('/:id', (req, res) => {
     res.send(toJSON(user));
 })
 
-router.post('/', (req, res) => {
+router.post('/', body('name').isLength({ min: 3 }).escape(), body('email').isEmail().escape(), (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
+
+
     const { error } = validate(req.body); 
     if (error) return res.status(400).send(error.details[0].message);
 
