@@ -13,7 +13,7 @@
 ## Run Server
 - `git clone https://github.com/joyadauche/node-server.git`
 - `cd node-server`
-- To run with docker:
+- To run with [Docker](https://docs.docker.com/get-docker/):
     - `docker build -t user--express-node-server  .`     
     - `docker run -it -p 3000:3000 user--express-node-server `
 - To run without docker:
