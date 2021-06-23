@@ -32,3 +32,6 @@ The `x-auth-token` value used for the simulation is a valid email address. In th
 
 ## Run Test Coverage
 `npm test:coverage`
+
+## Note
+if error occurs because port 3000 is in use, choose a random port number e.g run `PORT=4444 npm test` or `PORT=5555 npm start`
