@@ -40,7 +40,7 @@ router.post('/', (req, res) => {
     }
 
     data.push(user);
-    res.send(toJSON(user));
+    res.status(201).send(toJSON(user));
 });
 
 module.exports = router;
