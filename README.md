@@ -1,5 +1,9 @@
 # USERS API
-## An API that exposes a user resource to return all users, return a specific user, and create a user.
+An API that exposes a user resource to return all users, return a specific user, and create a user.
+
+## Postman Documentation
+- [API Service Doc](https://documenter.getpostman.com/view/1407713/TzecB4tR)
+- [API Service Test](https://www.getpostman.com/collections/eedab6b8123ccf83b7d7)
 
 ## Resources
 ### Users
